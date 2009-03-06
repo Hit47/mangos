@@ -100,6 +100,85 @@
 			/>
 		</Configuration>
 		<Configuration
+			Name="Release|Win32"
+			OutputDirectory=".\game__$(PlatformName)_$(ConfigurationName)"
+			IntermediateDirectory=".\game__$(PlatformName)_$(ConfigurationName)"
+			ConfigurationType="4"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="false"
+			CharacterSet="2"
+			>
+			<Tool
+				Name="VCPreBuildEventTool"
+			/>
+			<Tool
+				Name="VCCustomBuildTool"
+			/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"
+			/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"
+			/>
+			<Tool
+				Name="VCMIDLTool"
+			/>
+			<Tool
+				Name="VCCLCompilerTool"
+				AdditionalOptions="/MP"
+				InlineFunctionExpansion="1"
+				AdditionalIncludeDirectories="..\..\dep\include;..\..\src\framework;..\..\src\shared;..\..\src\shared\vmap;..\..\dep\ACE_wrappers"
+				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;"
+				StringPooling="true"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="true"
+				EnableEnhancedInstructionSet="1"
+				RuntimeTypeInfo="true"
+				UsePrecompiledHeader="0"
+				PrecompiledHeaderFile=".\game__$(PlatformName)_$(ConfigurationName)\game.pch"
+				AssemblerListingLocation=".\game__$(PlatformName)_$(ConfigurationName)\"
+				ObjectFile=".\game__$(PlatformName)_$(ConfigurationName)\"
+				ProgramDataBaseFileName=".\game__$(PlatformName)_$(ConfigurationName)\"
+				WarningLevel="3"
+				SuppressStartupBanner="true"
+				Detect64BitPortabilityProblems="false"
+				DebugInformationFormat="3"
+				CallingConvention="0"
+				CompileAs="0"
+			/>
+			<Tool
+				Name="VCManagedResourceCompilerTool"
+			/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="1033"
+			/>
+			<Tool
+				Name="VCPreLinkEventTool"
+			/>
+			<Tool
+				Name="VCLibrarianTool"
+				OutputFile=".\game__$(PlatformName)_$(ConfigurationName)\game.lib"
+				SuppressStartupBanner="true"
+			/>
+			<Tool
+				Name="VCALinkTool"
+			/>
+			<Tool
+				Name="VCXDCMakeTool"
+			/>
+			<Tool
+				Name="VCBscMakeTool"
+			/>
+			<Tool
+				Name="VCFxCopTool"
+			/>
+			<Tool
+				Name="VCPostBuildEventTool"
+			/>
+		</Configuration>
+		<Configuration
 			Name="Debug|x64"
 			OutputDirectory=".\game__$(PlatformName)_$(ConfigurationName)"
 			IntermediateDirectory=".\game__$(PlatformName)_$(ConfigurationName)"
@@ -162,85 +241,6 @@
 			<Tool
 				Name="VCLibrarianTool"
 				AdditionalDependencies=".\shared__$(PlatformName)_$(ConfigurationName)\shared.lib"
-				OutputFile=".\game__$(PlatformName)_$(ConfigurationName)\game.lib"
-				SuppressStartupBanner="true"
-			/>
-			<Tool
-				Name="VCALinkTool"
-			/>
-			<Tool
-				Name="VCXDCMakeTool"
-			/>
-			<Tool
-				Name="VCBscMakeTool"
-			/>
-			<Tool
-				Name="VCFxCopTool"
-			/>
-			<Tool
-				Name="VCPostBuildEventTool"
-			/>
-		</Configuration>
-		<Configuration
-			Name="Release|Win32"
-			OutputDirectory=".\game__$(PlatformName)_$(ConfigurationName)"
-			IntermediateDirectory=".\game__$(PlatformName)_$(ConfigurationName)"
-			ConfigurationType="4"
-			UseOfMFC="0"
-			ATLMinimizesCRunTimeLibraryUsage="false"
-			CharacterSet="2"
-			>
-			<Tool
-				Name="VCPreBuildEventTool"
-			/>
-			<Tool
-				Name="VCCustomBuildTool"
-			/>
-			<Tool
-				Name="VCXMLDataGeneratorTool"
-			/>
-			<Tool
-				Name="VCWebServiceProxyGeneratorTool"
-			/>
-			<Tool
-				Name="VCMIDLTool"
-			/>
-			<Tool
-				Name="VCCLCompilerTool"
-				AdditionalOptions="/MP"
-				InlineFunctionExpansion="1"
-				AdditionalIncludeDirectories="..\..\dep\include;..\..\src\framework;..\..\src\shared;..\..\src\shared\vmap;..\..\dep\ACE_wrappers"
-				PreprocessorDefinitions="WIN32;NDEBUG;_LIB;"
-				StringPooling="true"
-				RuntimeLibrary="2"
-				EnableFunctionLevelLinking="true"
-				EnableEnhancedInstructionSet="1"
-				RuntimeTypeInfo="true"
-				UsePrecompiledHeader="0"
-				PrecompiledHeaderFile=".\game__$(PlatformName)_$(ConfigurationName)\game.pch"
-				AssemblerListingLocation=".\game__$(PlatformName)_$(ConfigurationName)\"
-				ObjectFile=".\game__$(PlatformName)_$(ConfigurationName)\"
-				ProgramDataBaseFileName=".\game__$(PlatformName)_$(ConfigurationName)\"
-				WarningLevel="3"
-				SuppressStartupBanner="true"
-				Detect64BitPortabilityProblems="false"
-				DebugInformationFormat="3"
-				CallingConvention="0"
-				CompileAs="0"
-			/>
-			<Tool
-				Name="VCManagedResourceCompilerTool"
-			/>
-			<Tool
-				Name="VCResourceCompilerTool"
-				PreprocessorDefinitions="NDEBUG"
-				Culture="1033"
-			/>
-			<Tool
-				Name="VCPreLinkEventTool"
-			/>
-			<Tool
-				Name="VCLibrarianTool"
 				OutputFile=".\game__$(PlatformName)_$(ConfigurationName)\game.lib"
 				SuppressStartupBanner="true"
 			/>
@@ -357,14 +357,6 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\game\AchievementMgr.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\AchievementMgr.h"
-				>
-			</File>
-			<File
 				RelativePath="..\..\src\game\AddonHandler.cpp"
 				>
 			</File>
@@ -377,7 +369,7 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\game\AuctionHouseHandler.cpp"
+				RelativePath="..\..\src\game\AuctionHouse.cpp"
 				>
 			</File>
 			<File
@@ -421,14 +413,6 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\game\BattleGroundDS.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\BattleGroundDS.h"
-				>
-			</File>
-			<File
 				RelativePath="..\..\src\game\BattleGroundEY.cpp"
 				>
 			</File>
@@ -465,22 +449,6 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\game\BattleGroundRV.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\BattleGroundRV.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\BattleGroundSA.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\BattleGroundSA.h"
-				>
-			</File>
-			<File
 				RelativePath="..\..\src\game\BattleGroundWS.cpp"
 				>
 			</File>
@@ -489,15 +457,19 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\game\CalendarHandler.cpp"
-				>
-			</File>
-			<File
 				RelativePath="..\..\src\game\Cell.h"
 				>
 			</File>
 			<File
 				RelativePath="..\..\src\game\CellImpl.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\src\game\CEnDExP.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\src\game\CEnDExP.h"
 				>
 			</File>
 			<File
@@ -538,6 +510,14 @@
 			</File>
 			<File
 				RelativePath="..\..\src\game\DuelHandler.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\src\game\GameAccessor.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\src\game\GameAccessor.h"
 				>
 			</File>
 			<File
@@ -669,6 +649,14 @@
 				>
 			</File>
 			<File
+				RelativePath="..\..\src\game\mysql_config.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\src\game\mysql_config.h"
+				>
+			</File>
+			<File
 				RelativePath="..\..\src\game\NPCHandler.cpp"
 				>
 			</File>
@@ -694,14 +682,6 @@
 			</File>
 			<File
 				RelativePath="..\..\src\game\PetitionsHandler.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\PoolHandler.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\PoolHandler.h"
 				>
 			</File>
 			<File
@@ -853,11 +833,7 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\game\AuctionHouseMgr.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\AuctionHouseMgr.h"
+				RelativePath="..\..\src\game\AuctionHouseObject.h"
 				>
 			</File>
 			<File
@@ -866,14 +842,6 @@
 			</File>
 			<File
 				RelativePath="..\..\src\game\Bag.h"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\Calendar.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\Calendar.h"
 				>
 			</File>
 			<File
@@ -1221,14 +1189,6 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\src\game\Vehicle.cpp"
-				>
-			</File>
-			<File
-				RelativePath="..\..\src\game\Vehicle.h"
-				>
-			</File>
-			<File
 				RelativePath="..\..\src\game\WaypointMovementGenerator.cpp"
 				>
 			</File>
@@ -1330,6 +1290,14 @@
 			</File>
 			<File
 				RelativePath="..\..\src\game\PlayerDump.h"
+				>
+			</File>
+			<File
+				RelativePath="..\..\src\game\tools.cpp"
+				>
+			</File>
+			<File
+				RelativePath="..\..\src\game\Tools.h"
 				>
 			</File>
 		</Filter>
